@@ -6,9 +6,9 @@
     <script src="https://kit.fontawesome.com/84c04c9e02.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>Products</title>
 </head>
-<body style="height: 100vh;">
+<body class="vh-100">
     <header class="d-md-none">
         <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
             <div class="container-fluid">
@@ -46,10 +46,9 @@
             </div>
           </nav>
     </header>
-    <main class="h-100">
         <div class="container-fluid m-0 h-100">
             <div class="row h-100">
-                <div class="d-none d-md-flex flex-column flex-shrink-0 p-3 text-bg-dark w-auto">
+                <div class="d-none d-md-block p-3 text-bg-dark w-auto">
                         <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
                           <span class="fs-4">Bootstrap Dashboard</span>
                         </a>
@@ -104,25 +103,24 @@
                 <div class="col ps-md-4">
                     <div class="d-flex justify-content-between align-items-center pt-3 ">
                         <h1 class="">10 prodotti trovati</h1>
-                            <table class="text-dark-emphasis">
-                                <tr><td class="border p-1 border-dark-subtle">Esporta</td><td class="border p-1 border-dark-subtle">Nuovo</td></tr>
-                            </table>
+                          <div class="btn-group me-2" role="group" aria-label="First group">
+                            <button type="button" class="btn btn-outline-secondary">esporta</button>
+                            <button type="button" class="btn btn-outline-secondary">nuovo</button>
+                          </div>
                     </div>
                     <hr>
                     <table class="w-100">
                         <tr class="border-bottom">
                           <th class="pb-2">Nome</th>
-                          <th class="d-none d-sm-table-cell text-center" style="width: 75px;">Prezzo</th>
-                          <th class="d-none d-md-table-cell text-center" style="width: 75px;">Stato</th>
+                          <th class="d-none d-sm-table-cell text-center">Prezzo</th>
+                          <th class="d-none d-md-table-cell text-center">Stato</th>
                           <th class="text-center" style="width: 100px;">Azioni</th>
                         </tr>
                         <tr class="border-bottom">
-                            <td class="p-2 d-flex w-75">
-                              <img src="https://picsum.photos/seed/picsum/50/50" alt="" class="align-top flex-shrink-0" style="width: 50px; height: 50px;">
-                              <div>
-                                <p class="fw-bold ms-3 mb-0"> Smartphone Samsung Galaxy S21</p>
-                                <p class="d-none d-xl-block ms-3 fs-6">Display AMOLED, Fotocamera Ultra Wide, Batteria a lunga durata</p>
-                              </div>
+                            <td class="p-2 align-middle">
+                              <img src="https://picsum.photos/seed/picsum/60/60" alt="" class="img-fluid me-3 float-start">
+                                <span class="fw-bold  mb-0"> Smartphone Samsung Galaxy S21</span>
+                                <small class="d-none d-xl-block text-muted" >Display AMOLED, Fotocamera Ultra Wide, Batteria a lunga durata</small> 
                             </td>
                             <td class="d-none d-sm-table-cell text-center fw-bold">799.00€</td>
                             <td class="d-none d-md-table-cell text-center">
@@ -134,12 +132,10 @@
                             </td>
                         </tr>
                         <tr class="border-bottom">
-                          <td class="p-2 d-flex w-75">
-                            <img src="https://picsum.photos/seed/picsum/50/50" alt="" class="align-top flex-shrink-0" style="width: 50px; height: 50px;">
-                            <div>
-                              <p class="fw-bold ms-3 mb-0"> Apple MacBook Pro 13"</p>
-                              <p class="d-none d-xl-block ms-3 fs-6">Processore M1, SSD ultraveloce, Display Retina</p>
-                            </div>
+                          <td class="p-2 align-middle">
+                            <img src="https://picsum.photos/seed/picsum/60/60" alt="" class="img-fluid me-3 float-start">
+                              <span class="fw-bold mb-0"> Apple MacBook Pro 13"</span>
+                              <small class="d-none d-xl-block text-muted">Processore M1, SSD ultraveloce, Display Retina</small>
                           </td>
                           <td class="d-none d-sm-table-cell text-center fw-bold">1299.00€</td>
                           <td class="d-none d-md-table-cell text-center">
@@ -151,12 +147,10 @@
                           </td>
                         </tr>
                         <tr class="border-bottom">
-                          <td class="p-2 d-flex w-75">
-                            <img src="https://picsum.photos/seed/picsum/50/50" alt="" class="align-top flex-shrink-0" style="width: 50px; height: 50px;">
-                            <div>
-                              <p class="fw-bold ms-3 mb-0"> Smartwatch Apple Watch Series 6</p>
-                              <p class="d-none d-xl-block ms-3 fs-6">Monitoraggio attività, Misurazione ossigeno nel sangue, Display Always-On</p>
-                            </div>
+                          <td class="p-2 align-middle">
+                            <img src="https://picsum.photos/seed/picsum/60/60" alt="" class="img-fluid me-3 float-start">
+                              <span class="fw-bold mb-0"> Smartwatch Apple Watch Series 6"</span>
+                              <small class="d-none d-xl-block text-muted">Monitoraggio attività, Misurazione ossigeno nel sangue, Display Always-On</small>
                           </td>
                           <td class="d-none d-sm-table-cell text-center fw-bold">429.00€</td>
                           <td class="d-none d-md-table-cell text-center">
@@ -168,13 +162,11 @@
                           </td>
                         </tr>
                         <tr class="border-bottom">
-                          <td class="p-2 d-flex w-75">
-                            <img src="https://picsum.photos/seed/picsum/50/50" alt="" class="align-top flex-shrink-0" style="width: 50px; height: 50px;">
-                            <div>
-                              <p class="fw-bold ms-3 mb-0"> Auricolari Wireless Apple AirPods Pro</p>
-                              <p class="d-none d-xl-block ms-3 fs-6">Cancellazione attiva del rumore, Resistenza all'acqua e al sudore</p>
-                            </div>
-                          </td>
+                          <td class="p-2 align-middle">                
+                            <img src="https://picsum.photos/seed/picsum/60/60" alt="" class="img-fluid me-3 float-start">
+                            <span class="fw-bold mb-0"> Auricolari Wireless Apple AirPods Pro"</span>
+                            <small class="d-none d-xl-block text-muted">Cancellazione attiva del rumore, Resistenza all'acqua e al sudore</small>
+                          </td>                          
                           <td class="d-none d-sm-table-cell text-center fw-bold">279.00€</td>
                           <td class="d-none d-md-table-cell text-center">
                             <i class="fa-solid fa-check text-success fs-5 border rounded-circle p-2 border-2 border-success"></i>
@@ -185,13 +177,11 @@
                           </td>
                         </tr>
                         <tr class="border-bottom">
-                          <td class="p-2 d-flex w-75">
-                            <img src="https://picsum.photos/seed/picsum/50/50" alt="" class="align-top flex-shrink-0" style="width: 50px; height: 50px;">
-                            <div>
-                              <p class="fw-bold ms-3 mb-0"> Console Sony PlayStation 5</p>
-                              <p class="d-none d-xl-block ms-3 fs-6">Gaming ad alta definizione, Tempi di caricamento rapidi, Supporto per giochi 4K</p>
-                            </div>
-                          </td>
+                          <td class="p-2 align-middle">
+                          <img src="https://picsum.photos/seed/picsum/60/60" alt="" class="img-fluid me-3 float-start">
+                            <span class="fw-bold mb-0"> Console Sony PlayStation 5</span>
+                            <small class="d-none d-xl-block text-muted">Gaming ad alta definizione, Tempi di caricamento rapidi, Supporto per giochi 4K</small>
+                          </td> 
                           <td class="d-none d-sm-table-cell text-center fw-bold">499.00€</td>
                           <td class="d-none d-md-table-cell text-center">
                             <i class="fa-solid fa-check text-success fs-5 border rounded-circle p-2 border-2 border-success"></i>
@@ -202,13 +192,11 @@
                           </td>
                         </tr>
                         <tr class="border-bottom">
-                          <td class="p-2 d-flex w-75">
-                            <img src="https://picsum.photos/seed/picsum/50/50" alt="" class="align-top flex-shrink-0" style="width: 50px; height: 50px;">
-                            <div>
-                              <p class="fw-bold ms-3 mb-0"> Monitor Gaming ASUS ROG Strix XG27UQ</p>
-                              <p class="d-none d-xl-block ms-3 fs-6">Schermo 4K UHD, Frequenza di aggiornamento 144Hz, Tecnologia HDR</p>
-                            </div>
-                          </td>
+                          <td class="p-2 align-middle">
+                          <img src="https://picsum.photos/seed/picsum/60/60" alt="" class="img-fluid me-3 float-start">
+                            <span class="fw-bold mb-0"> Monitor Gaming ASUS ROG Strix XG27UQ</span>
+                            <small class="d-none d-xl-block text-muted">Schermo 4K UHD, Frequenza di aggiornamento 144Hz, Tecnologia HDR</small>
+                          </td> 
                           <td class="d-none d-sm-table-cell text-center fw-bold">999.00€</td>
                           <td class="d-none d-md-table-cell text-center">
                             <i class="fa-solid fa-check text-success fs-5 border rounded-circle p-2 border-2 border-success"></i>
@@ -219,16 +207,14 @@
                           </td>
                         </tr>
                         <tr class="border-bottom">
-                          <td class="p-2 d-flex w-75">
-                            <img src="https://picsum.photos/seed/picsum/50/50" alt="" class="align-top flex-shrink-0" style="width: 50px; height: 50px;">
-                            <div>
-                              <p class="fw-bold ms-3 mb-0"> Stampante Multifunzione HP Laser Jet Pro MFP M28w</p>
-                              <p class="d-none d-xl-block ms-3 fs-6">Stampa, Scansione, Copia, Connessione Wi-Fi</p>
-                            </div>
-                          </td>
+                          <td class="p-2 align-middle">
+                          <img src="https://picsum.photos/seed/picsum/60/60" alt="" class="img-fluid me-3 float-start">
+                            <span class="fw-bold mb-0"> Stampante Multifunzione HP Laser Jet Pro MFP M28w</span>
+                            <small class="d-none d-xl-block text-muted">Stampa, Scansione, Copia, Connessione Wi-Fi</small>
+                          </td> 
                           <td class="d-none d-sm-table-cell text-center fw-bold">159.00€</td>
                           <td class="d-none d-md-table-cell text-center">
-                            <i class="fa-solid fa-check text-success fs-5 border rounded-circle p-2 border-2 border-success"></i>
+                            <i class="fa-solid fa-xmark fs-5 border rounded-circle p-2 border-2 text-danger border-danger"></i>
                           </td>
                           <td class="text-center">
                             <i class="fa-solid fa-pen text-primary fs-5 border border-primary p-2 rounded m-1"></i>
@@ -236,12 +222,10 @@
                           </td>
                         </tr>
                         <tr class="border-bottom">
-                          <td class="p-2 d-flex w-75">
-                            <img src="https://picsum.photos/seed/picsum/50/50" alt="" class="align-top flex-shrink-0" style="width: 50px; height: 50px;">
-                            <div>
-                              <p class="fw-bold ms-3 mb-0"> Router Wi-Fi Mesh TP-Link Deco X20</p>
-                              <p class="d-none d-xl-block ms-3 fs-6">Copertura fino a 560 mq. Velocità fino a 1800 Mbps, Gestione tramite app</p>
-                            </div>
+                          <td class="p-2 align-middle">
+                          <img src="https://picsum.photos/seed/picsum/60/60" alt="" class="img-fluid me-3 float-start">
+                            <span class="fw-bold mb-0"> Router Wi-Fi Mesh TP-Link Deco X20</span>
+                            <small class="d-none d-xl-block text-muted">Copertura fino a 560 mq. Velocità fino a 1800 Mbps, Gestione tramite app</small>
                           </td>
                           <td class="d-none d-sm-table-cell text-center fw-bold">199.00€</td>
                           <td class="d-none d-md-table-cell text-center">
@@ -253,12 +237,10 @@
                           </td>
                         </tr>
                         <tr class="border-bottom">
-                          <td class="p-2 d-flex w-75">
-                            <img src="https://picsum.photos/seed/picsum/50/50" alt="" class="align-top flex-shrink-0" style="width: 50px; height: 50px;">
-                            <div>
-                              <p class="fw-bold ms-3 mb-0"> SSD NVMe Western Digital Black SN850</p>
-                              <p class="d-none d-xl-block ms-3 fs-6">Capacità 1TB, Velocità di lettura fino a 7000 MB/s, Tecnologia PCIe Gen4</p>
-                            </div>
+                          <td class="p-2 align-middle">
+                          <img src="https://picsum.photos/seed/picsum/60/60" alt="" class="img-fluid me-3 float-start">
+                            <span class="fw-bold mb-0"> SSD NVMe Western Digital Black SN850</span>
+                            <small class="d-none d-xl-block text-muted">Capacità 1TB, Velocità di lettura fino a 7000 MB/s, Tecnologia PCIe Gen4</small>
                           </td>
                           <td class="d-none d-sm-table-cell text-center fw-bold">229.00€</td>
                           <td class="d-none d-md-table-cell text-center">
@@ -270,16 +252,14 @@
                           </td>
                         </tr>
                         <tr class="border-bottom">
-                          <td class="p-2 d-flex w-75">
-                            <img src="https://picsum.photos/seed/picsum/50/50" alt="" class="align-top flex-shrink-0" style="width: 50px; height: 50px;">
-                            <div>
-                              <p class="fw-bold ms-3 mb-0"> Mouse Gaming Logitech G502 HERO</p>
-                              <p class="d-none d-xl-block ms-3 fs-6">Sensore HERO 25K, 11 pulsanti programmabili, Peso personalizzabile</p>
-                            </div>
+                          <td class="p-2 align-middle">
+                          <img src="https://picsum.photos/seed/picsum/60/60" alt="" class="img-fluid me-3 float-start">
+                            <span class="fw-bold mb-0"> Mouse Gaming Logitech G502 HERO</span>
+                            <small class="d-none d-xl-block text-muted">Sensore HERO 25K, 11 pulsanti programmabili, Peso personalizzabile</small>
                           </td>
                           <td class="d-none d-sm-table-cell text-center fw-bold">79.99€</td>
                           <td class="d-none d-md-table-cell text-center">
-                            <i class="fa-solid fa-check text-success fs-5 border rounded-circle p-2 border-2 border-success"></i>
+                            <i class="fa-solid fa-xmark fs-5 border rounded-circle p-2 border-2 text-danger border-danger"></i>
                           </td>
                           <td class="text-center">
                             <i class="fa-solid fa-pen text-primary fs-5 border border-primary p-2 rounded m-1"></i>
@@ -290,6 +270,5 @@
                 </div>
             </div>
         </div>
-    </main>
 </body>
 </html>
