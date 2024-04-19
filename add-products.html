@@ -106,7 +106,7 @@
                       <p class="text-muted">I campi cotrassegnati con un asterisco (*) sono obbligatori.<br> Le immagini devono essere in formato PNG e non devono superare i 4 MB di dimensione</p>
                      </div>
                      <form class="px-2 d-lg-flex flex-wrap mx-auto" style="max-width: 90%;">
-                        <div class="col-lg-7">
+                        <div class="col-lg-7 h-auto">
                           <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label fw-semibold">Nome</label>
                             <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Samsung Galaxy 10 Plus">
@@ -127,7 +127,10 @@
                           <div class="mb-3">
                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Inserisci la descrizione del prodotto, massimo 1000 caratteri"></textarea>
                           </div>
-                          <input class="form-control fw-semibold mb-3" type="file" id="formFile">
+                          <div class="input-group mb-3">
+                            <input type="file" class="form-control" id="inputGroupFile02">
+                            <label class="input-group-text" for="inputGroupFile02">Immagine</label>
+                          </div>
                           <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
                             <div class="btn-group me-2" role="group" aria-label="First group">
                               <button type="button" class="btn btn-outline-secondary">Disponibile</button>
@@ -171,7 +174,7 @@
                             </li>
                           </ul>
                         </div>
-                      <input type="submit" class="btn btn-primary" value="Salva">
+                      <input type="submit" class="btn btn-primary mt-3 mt-lg-0" value="Salva">
                     </form>
                 </div>
             </div>
